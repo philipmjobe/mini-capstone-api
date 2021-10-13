@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(name: "Motorcycle", price: 9,799, image_url: "https://cdp.azureedge.net/products/USA/IDN/2021/MC/CRUISER/SCOUT_BOBBER_SIXTY_ABS/49/THUNDER_BLACK/2000000011.jpg", description: "Indian Scout Bobber")
+Product.create(name: "Motorcycle", price: 9799, image_url: "https://cdp.azureedge.net/products/USA/IDN/2021/MC/CRUISER/SCOUT_BOBBER_SIXTY_ABS/49/THUNDER_BLACK/2000000011.jpg", description: "Indian Scout Bobber")
