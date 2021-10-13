@@ -5,4 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(name: "Motorcycle", price: 9799, image_url: "https://cdp.azureedge.net/products/USA/IDN/2021/MC/CRUISER/SCOUT_BOBBER_SIXTY_ABS/49/THUNDER_BLACK/2000000011.jpg", description: "Indian Scout Bobber")
+# Product.create(name: "Motorcycle", price: 9799, image_url: "https://cdp.azureedge.net/products/USA/IDN/2021/MC/CRUISER/SCOUT_BOBBER_SIXTY_ABS/49/THUNDER_BLACK/2000000011.jpg", description: "Indian Scout Bobber")
+
+Product.create(name: "Helmet", price: 270, image_url: "https://www.bellhelmets.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-bell-master-catalog/default/dw48a91d14/images/large/bell-rogue-cruiser-motorcycle-helmet-honor-matte-titanium-black-right.jpg?sw=800&sh=800&sm=fit)", description: "A helmet for motorcycle riding")
