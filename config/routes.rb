@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 get "/all_product" => "products#all_product"
 get "/first_product" => "products#first_product"
 get "/any_product/:wildcard" => "products#any_product"
+get "/one_product" => "products#one_product"
 end

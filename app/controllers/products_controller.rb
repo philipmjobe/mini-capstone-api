@@ -5,8 +5,9 @@ class ProductsController < ApplicationController
     render json: products
   end 
 
-  # def first_product
-  #   first_product = Product.first
-  #   render json: first_product.as_json
-  # end 
+  def one_product
+    product_id = params(:id)
+    product = Product.find_by(id: product_id)
+    render json: product.as_json
+  end 
 end
