@@ -1,0 +1,9 @@
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "Motorcycle boots",
+  "price": 376,
+  "image_url": "https://www.revzilla.com/product_images/0125/8230/forma_adventure_boots_300x300.jpg",
+  "description": "These keep your feet safe while riding a mototrcycle"
+}
