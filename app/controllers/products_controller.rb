@@ -1,4 +1,10 @@
 class ProductsController < ApplicationController
+
+  def index 
+    product = Product.all 
+    render json: product
+  end 
+
   def any_product
     product = params[:wildcard]
     products = Product.find_by(id: "#{product}")
