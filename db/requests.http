@@ -7,3 +7,12 @@ Content-Type: application/json
   "image_url": "https://www.revzilla.com/product_images/0125/8230/forma_adventure_boots_300x300.jpg",
   "description": "These keep your feet safe while riding a mototrcycle"
 }
+
+### PRODUCT UPDATE
+
+PATCH http://localhost:3000/products/5.json
+Content-Type: application/json
+
+{
+  "price": 985
+}

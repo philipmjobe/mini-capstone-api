@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
     product_id = params["id"].to_i
     product = Product.find_by id: product_id
 
-    product.name = params["name"] || product.title
+    product.name = params["name"] || product.name
     product.price = params["price"] || product.price
     product.image_url = params["image_url"] || product.image_url
     product.description = params["description"] || product.description
