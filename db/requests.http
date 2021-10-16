@@ -1,3 +1,5 @@
+### PRODUCT CREATE
+
 POST http://localhost:3000/products.json
 Content-Type: application/json
 
@@ -20,3 +22,9 @@ Content-Type: application/json
 ### PRODUCT DESTROY
 
 DELETE http://localhost:3000/products/6.json
+
+### PRODUCTS INDEX
+GET http://localhost:3000/products.json 
+
+### PRODUCT SHOW
+GET http://localhost:3000/products/1.json 
