@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "mini-capstone.peterxjang.com/restful-routes/products"
+    origins 'mini-capstone.peterxjang.com/restful-routes/products'
 
     resource '*',
       headers: :any,
