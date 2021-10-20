@@ -18,8 +18,11 @@ class ProductsController < ApplicationController
       image_url: params["image_url"],
       description: params["description"]
     )
-    product.save
-    render json: product
+    if product.save
+      render json: product
+    else
+      render json: {errors: product.errors.full_message} status: unprocessable_entity
+    end
   end 
 
   def update
@@ -31,8 +34,11 @@ class ProductsController < ApplicationController
     product.image_url = params["image_url"] || product.image_url
     product.description = params["description"] || product.description
 
-    product.save
-    render json: product
+    if product.save
+      render json: product
+    else
+      render json: {errors: product.errors.full_message} status: unprocessable_entity
+    end
   end
 
   def destroy
