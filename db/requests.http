@@ -22,7 +22,7 @@ PATCH http://localhost:3000/products/4.json
 Content-Type: application/json
 
 {
-  "price": 985
+  "price": "bill"
 }
 
 ### PRODUCT DESTROY
