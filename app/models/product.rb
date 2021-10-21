@@ -1,12 +1,13 @@
 class Product < ApplicationRecord
+  belongs_to :supplier
   
   validates :name, presence: true, length: {minimum: 2}
   validates :price, presence: true, numericality: { greater_than: 0 }
   validates :image_url, presence: true 
   validates :description, presence: true, length: { in: 10..500 }
   
-  def supplier
-    Supplier.find_by(id: supplier_id)
+  def images
+    Image.where(product_id: id)
   end 
 
   def is_discounted
