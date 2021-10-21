@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  ### PRODUCTS
   get "/products" => "products#index"
   get "/products/:id" => "products#show"
   post "/products" => "products#create"
@@ -12,4 +13,11 @@ Rails.application.routes.draw do
   post "/suppliers" => "suppliers#create"
   patch "/suppliers/:id" => "suppliers#update"
   delete "/suppliers/:id" => "suppliers#destroy"
+
+  ### IMAGES
+  get "/images" => "images#index"
+  get "/images/:id" => "images#show"
+  post "/images" => "images#create"
+  patch "/images/:id" => "images#update"
+  delete "/images/:id" => "images#destroy"
 end
