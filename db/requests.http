@@ -55,4 +55,31 @@ Content-Type: application/json
 }
 
 ### SUPPLIER DESTROY
-DELETE http://localhost:3000/products/5.json
+DELETE http://localhost:3000/suppliers/5.json
+
+#######################################################
+### IMAGE INDEX
+GET http://localhost:3000/images.json
+
+### IMAGE SHOW
+GET http://localhost:3000/images/2.json
+
+### IMAGE CREATE
+POST http://localhost:3000/images.json
+Content-Type: application/json
+
+{
+  "url":
+  "product_id"
+}
+
+### IMAGE UPDATE
+PATCH http://localhost:3000/images/4.json
+Content-Type: application/json
+
+{
+  "url":
+}
+
+### IMAGE DESTROY
+DELETE http://localhost:3000/images/.json
