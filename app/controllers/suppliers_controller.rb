@@ -16,6 +16,6 @@ class SuppliersController < ApplicationController
       name: params["name"]
       email: params["email"]
       phone_number: params["phone_number"]
-      
     )
+  end 
 end
