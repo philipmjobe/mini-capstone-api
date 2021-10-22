@@ -92,7 +92,18 @@ Content-Type: application/json
 
 {
   "name": "Phil jobe",
-  "email": "phil@example.com",
+  "email": "phil@example.com"       ,
   "password": "password",
   "password_confirmation": "password"
 }
+
+################################################
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
