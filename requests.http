@@ -1,6 +1,6 @@
 ### PRODUCTS INDEX
 GET http://localhost:3000/products.json 
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQ0NDl9.rmwM6cUas-ZBlGa0iqaCXnuko-KKe_ct9QRgCf_3C6o
 ### PRODUCT SHOW
 GET http://localhost:3000/products/2.json 
 
@@ -107,3 +107,14 @@ Content-Type: application/json
   "password": "password"
 }
 
+#################################################
+### Photos create
+POST http://localhost:3000/photos
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "width": 640,
+  "height": 480
+}
