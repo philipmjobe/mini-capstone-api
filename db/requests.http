@@ -83,3 +83,16 @@ Content-Type: application/json
 
 ### IMAGE DESTROY
 DELETE http://localhost:3000/images/.json
+
+
+#################################################
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
