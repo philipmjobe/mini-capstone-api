@@ -11,19 +11,17 @@ class ApplicationController < ActionController::API
             true,
             { algorithm: "HS256" }
           )
-        User.find_by(id: decoded_token[0]["user_id"])
-        rescue JWT::ExpiredSignature
-          nil
+          User.find_by(id: decoded_token[0]["user_id"])
+          rescue JWT::ExpiredSignature
+            nil
         end
-      end
     end
+  end
   
   def authenticate_user
     unless current_user
       render json: {}, status: :unauthorized
     end
   end
-
-  
  
 end
