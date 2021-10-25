@@ -134,8 +134,6 @@ Content-Type: application/json
 {
   
   "product_id": 2,
-  "quantity": 2,
-  "subtotal": 540,
-  "tax": 48,
-  "total": 588
+  "quantity": 2
+  
 }

@@ -1,8 +1,8 @@
 class OrdersController < ApplicationController
   def index
     if current_user
-      order = Order.all
-      render json: order
+      orders = current_user.orders 
+      render json: orders 
     else  
       render json: [], status: 406
     end   
@@ -18,14 +18,20 @@ class OrdersController < ApplicationController
   
   
   def create 
+    product = Product.find_by(id: params[:product_id])
+
+    calculated_subtotal = product.price * params[:quantity]
+    calculated_tax = calculated_subtotal * 0.09
+    calculated_total = calculated_subtotal * calculated_tax
+    
     if current_user
       order = Order.new(
         user_id: current_user.id,
         product_id: params["product_id"],
         quantity: params["quanttity"],
-        subtotal: params["subtotal"],
-        tax: params["tax"],
-        total: params["total"]
+        subtotal: calculated_subtotal,
+        tax: calculated_tax,
+        total: calculated_total
       )
 
       if order.save 
