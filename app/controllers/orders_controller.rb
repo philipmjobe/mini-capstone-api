@@ -1,7 +1,11 @@
 class OrdersController < ApplicationController
   def index
-    order = Order.all
-    render json: order 
+    if current_user
+      order = Order.all
+      render json: order
+    else  
+      render json: [], status: 406
+    end   
   end 
   
   
