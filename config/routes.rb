@@ -27,5 +27,7 @@ Rails.application.routes.draw do
   ### LOGIN
   post "/sessions" => "sessions#create"
 
-
+  ### ORDERS
+  get "/orders/:id" => "orders#show"
+  post "/orders" => "orders#create"
 end
