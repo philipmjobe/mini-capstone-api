@@ -119,6 +119,9 @@ Content-Type: application/json
   "height": 480
 }
 
+### Orders index
+GET http://localhost:3000/orders.json 
+
 ### Orders show
 GET http://localhost:3000/orders/1.json 
 

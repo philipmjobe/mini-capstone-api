@@ -1,4 +1,10 @@
 class OrdersController < ApplicationController
+  def index
+    order = Order.all
+    render json: order 
+  end 
+  
+  
   def show 
     order_id = params[:id]
     order = Order.find_by(id: order_id)
