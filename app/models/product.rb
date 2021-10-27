@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  has_many :category_products
   belongs_to :supplier
   has_many :orders
   
