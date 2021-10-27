@@ -31,3 +31,7 @@
 #   {name: "Test name", email: "test@test.com", password_digest: "$2a$12$P0b87fvjULo12Nm96jZX0uAGdMdhBd859k0iKhh6PB2rPyHtTcK6q", admin: false},
 #   {name: "Phil jobe", email: "phil@example.com", password_digest: "$2a$12$QiFaSqVwYzUt380.w4VKIujsmAd7t.zD7Us5X5q5NytALSS9Vs2Yu", admin: false}
 # ])
+
+# CategoryProduct.create(product_id: 1, category_id: 1)
+# CategoryProduct.create(product_id: 3, category_id: 2)
+# CategoryProduct.create(product_id: 2, category_id: 3)
