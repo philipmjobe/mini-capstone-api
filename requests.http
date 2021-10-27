@@ -1,6 +1,7 @@
 ### PRODUCTS INDEX
-GET http://localhost:3000/products.json 
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQ0NDl9.rmwM6cUas-ZBlGa0iqaCXnuko-KKe_ct9QRgCf_3C6o
+GET http://localhost:3000/products.json?category=bikes
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU0NTY1ODB9.7xNB8DfBJ4v9yX8eXUNLV1e_Sn_xJ8nFmGo_qpAht2c
+
 ### PRODUCT SHOW
 GET http://localhost:3000/products/2.json 
 

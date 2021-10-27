@@ -2,12 +2,12 @@ class ProductsController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
 
   def index 
-    if current_user
-      product = Product.all 
-      render json: product
-    else  
-      render json: {message: "You need to log in!"}
-    end 
+    product = Product.all
+    if params[:category]
+      cat = Category.find_by(name: params[:category])
+      product = cat.products
+    end
+    render json: product 
   end 
 
   def show 
