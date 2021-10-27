@@ -13,9 +13,9 @@ class SuppliersController < ApplicationController
 
   def create
     supplier = Supplier.new(
-      name: params["name"]
-      email: params["email"]
-      phone_number: params["phone_number"]
+      name = params["name"],
+      email = params["email"],
+      phone_number = params["phone_number"]
     )
     if supplier.save
       render json: supplier 
