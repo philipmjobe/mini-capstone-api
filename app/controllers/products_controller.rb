@@ -30,12 +30,10 @@ class ProductsController < ApplicationController
   end 
 
   def update
-    product_id = params["id"].to_i
-    product = Product.find_by id: product_id
-
-    product.name = params["name"] || product.name
-    product.price = params["price"] || product.price
-    product.description = params["description"] || product.description
+    product = Product.find_by(id: params[:id])
+    product.name = params[:name] || product.name 
+    product.price = params[:price] || product.price
+    product.description == params[:description] || product.description
 
     if product.save
       render json: product
@@ -45,10 +43,8 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    product_id = params["id"].to_i
-    product = Product.find_by id: product_id
-
-    product.destroy
+    product = Product.find_by(id: params[:id])
+    product.destroy 
     render json: {message: "Sucessfully destroyed!"}
   end 
 end
