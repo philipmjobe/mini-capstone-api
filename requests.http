@@ -138,3 +138,15 @@ Content-Type: application/json
   "quantity": 2
   
 }
+
+### CARTED PRODUCTS CREATE
+  POST http://localhost:3000/carted_products.json 
+  Content-Type: application/json
+
+  {
+    "user_id": 1,
+    "product_id": 1,
+    "quantity": 1,
+    "status": "In cart",
+    "order_id": 1
+  }
