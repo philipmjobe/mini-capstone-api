@@ -140,11 +140,11 @@ Content-Type: application/json
 }
 
 ### CARTED PRODUCTS CREATE
-  POST http://localhost:3000/carted_products.json 
-  Content-Type: application/json
+POST http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1MzA3NjB9.OgGqLM8-3TPAhEnbv9_SH2AdD1Ln0yKLec8fP1NgLDE 
+Content-Type: application/json
 
   {
-    "user_id": 1,
     "product_id": 1,
     "quantity": 1,
     "status": "In cart",
