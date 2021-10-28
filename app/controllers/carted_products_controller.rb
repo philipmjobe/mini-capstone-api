@@ -5,7 +5,7 @@ class CartedProductsController < ApplicationController
       product_id: params[:product_id],
       quantity: params[:quantity],
       status: params[:status],
-      order_id: params[:order_id]
+      order_id: nil 
     )
     if carted_products.save
       render json: {message: "Suceccfully Created"},
